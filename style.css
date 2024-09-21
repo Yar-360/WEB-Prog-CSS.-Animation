@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav.menu {
+    background-color: #000000;
+    padding: 10px;
+}
+
+nav.menu ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav.menu ul li {
+    position: relative;
+    margin-right: 20px;
+}
+
+nav.menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+nav.menu ul li a:hover {
+    background-color: #0905f7;
+}
+
+nav.menu ul li.dropdown:hover .dropdown-menu {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+nav.menu ul li .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #455185;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    min-width: 150px;
+    padding: 0;
+}
+
+nav.menu ul li .dropdown-menu li {
+    width: 100%;
+}
+
+nav.menu ul li .dropdown-menu li a {
+    padding: 10px;
+    display: block;
+    color: white;
+}
+
+nav.menu ul li .dropdown-menu li a:hover {
+    background-color: #050505;
+}
+
+/* Анімація */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
